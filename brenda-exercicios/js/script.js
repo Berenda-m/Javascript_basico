@@ -6,7 +6,6 @@
     let soma = (numero1 + numero2);
     console.log(soma);
 }
-
 {
     //subtração
     let numero1 = 55;
@@ -169,7 +168,126 @@
 //desafios combinados
 {//19
     let numero = 6;
-    let resto= numero%2;
-    console.log(resto == 0 && numero >=1 && numero <=100);
+    let resto = numero % 2;
+    console.log(resto == 0 && numero >= 1 && numero <= 100);
 }
 
+function parEIntervalo() {
+    let numero = Number(prompt("Informe um numero"))
+    if (numero > 0 && numero <= 100) {
+        if (numero % 2 == 0) {
+            alert("O numero está no intervalo de 1 a 100, e é par")
+        } else {
+            alert("O número está no intervalo de 1 a 100, e é impar")
+        }
+    } else {
+        alert("Fora do intervalo de 1 a 100")
+    }
+}
+parEIntervalo()
+
+//20 em funtion
+function situacaoAluno() {
+    let nota1 = Number(prompt("Infome a primeira nota"))
+    let nota2 = Number(prompt("Infome a segunda nota"))
+    let nota3 = Number(prompt("Infome a terceira nota"))
+
+    let media = (nota1 + nota2 + nota3) / 3
+
+    if (media < 6) {
+        alert("Aluno Reprovado")
+    } else if (media >= 6 && media < 7) {
+        alert("Aluno em exame")
+    } else {
+        alert("Aluno aprovado")
+    }
+}
+situacaoAluno()
+
+//21 Exercicio nota
+function classificacaoNota() {
+    let nota = Number(prompt("Informe a nota"))
+    if (nota >= 0 && nota <= 10) {
+        if (nota >= 9) {
+            alert("Excelente")
+        } else if (nota >= 7) {
+            alert("Aprovado")
+        } else if (nota >= 5) {
+            alert("Recuperação")
+        } else {
+            alert("Reprovado")
+        }
+    } else {
+        alert("Nota Inválida!")
+    }
+}
+//22
+function calculoIMC() {
+    let peso = Number(prompt("Informe seu peso"))
+    let altura = Number(prompt("informe sua altura"))
+    let imc = peso / (altura ** 2)
+    if (imc <= 18.5){
+        alert("Abaixo do peso")
+    } else if(imc<=25){
+        alert("Peso normal")
+    }else if(imc <=30){
+        alert("Sobrepeso")
+    }else if(imc >=30){
+        alert("Obesidade")
+    }
+}
+calculoIMC()
+
+classificacaoNota()
+//exercicio 01 em function
+function somar(x, b) {
+    soma = x + b
+    console.log(soma)
+}
+somar(70, 14)
+
+//exercicio 2 em function
+function subtrai(x, b) {
+    subtrai = x - b
+    console.log(subtrai)
+}
+subtrai(55, 31)
+
+//exercicio 3 em function
+function multiplica(x, b) {
+    multiplica = x * b
+    console.log(multiplica)
+}
+multiplica(84, 24)
+
+//exercicio 4 em function
+function divide(x, b) {
+    divide = x / b
+    console.log(divide)
+}
+divide(21, 3)
+
+function maior(x) {
+    console.log(x >= 10)
+}
+maior(10)
+
+function preco(x) {
+    console.log(x >= 10 && x <= 100)
+}
+preco(52)
+
+function nome(x, b) {
+    name = "Ana"
+    name2 = "ana"
+    console.log(name === name2)
+}
+nome("Ana", "ana")
+
+
+let aluno = false
+if (aluno == true) {
+    console.log("presença")
+} else {
+    console.log("falta")
+}
