@@ -12,8 +12,8 @@ if(numero1 > numero2){
 
 let numero= Number(prompt("Informe um número"))
 let resultado= numero >0? "Positivo": "Negativo"
-alert(resultado)
-*/
+alert(resultado)*/
+
 
 /*## 3. Identificação de sexo
 let sexo = prompt("Informe seu gênero, F para feminino, M para masculino").toLowerCase()
@@ -145,7 +145,7 @@ break
 case "v": alert("Boa tarde!")
 break
 default: alert("Turno inválido")
-}
+}*/
 
 /*## 11. Reajuste salarial
 let salario = Number(prompt("Informe o valor do seu sálario:"))
@@ -175,7 +175,41 @@ if (salario <= 280) {
     novoSalario = salario + aumento
     alert("Seu salário era " + salario + ", teve um reajuste de 5% aumento de " + aumento + " reais. Seu novo salário é " + novoSalario + " reais.")
 }*/
-/*## 12. Folha de pagamento*/
+
+
+
+/*## 12. Folha de pagamento
+let valorHora = Number(prompt("Informe valor da sua hora de trabalho"))
+let horasMes = Number(prompt("Informe quantas horas trabalhadas"))
+let salarioBruto = valorHora * horasMes
+let inss = salarioBruto * 0.10
+let sindicato = salarioBruto * 0.03
+let fgts = salarioBruto * 0.11
+let ir
+
+if (salarioBruto <= 900) {
+    ir = 0
+} else if (salarioBruto <= 1500) {
+    ir = 0.05
+} else if (salarioBruto <= 2500) {
+    ir = 0.10
+} else {
+    ir = 0.20
+}
+
+let valorIr = salarioBruto * ir
+let totalDescontos = valorIr + inss + sindicato
+let salarioLiquido = salarioBruto - totalDescontos
+
+if (salarioBruto <= 1500) {
+    alert("Seu sálario bruto foi de R$ " + salarioBruto + ", seus descontos foram de R$ " + totalDescontos + ", seus salário liquido ficou em " + salarioLiquido)
+}else if (salarioBruto <= 1500) {
+    alert("Seu sálario bruto foi de R$ " + salarioBruto + ", seus descontos foram de R$ " + totalDescontos + ", seus salário liquido ficou em " + salarioLiquido)
+} else if (salarioBruto <= 2500) {
+   alert("Seu sálario bruto foi de R$ " + salarioBruto + ", seus descontos foram de R$ " + totalDescontos + ", seus salário liquido ficou em " + salarioLiquido)
+} else {
+    alert("Seu sálario bruto foi de R$ " + salarioBruto + ", seus descontos foram de R$ " + totalDescontos + ", seus salário liquido ficou em " + salarioLiquido)
+}*/
 
 /*## 13. Dia da semana
 let diaDaSemana = Number(prompt("Digite um número de 1 a 7 para saber o dia da semana"))
@@ -197,6 +231,141 @@ switch(diaDaSemana){
     default: alert("Número inválido")
 }*/
 
+/*## 14. Conceito por média
+let nota1 = Number(prompt("Informe a primeira nota"))
+let nota2 = Number(prompt("Informe a segunda nota"))
+let media = (nota1 + nota2) / 2
+let conceito
+let situacao
+
+if (media >= 9.0) {
+    conceito = "A"
+} else if (media >= 7.5) {
+    conceito = "B"
+} else if (media >= 6.0) {
+    conceito = "C"
+} else if(media >= 4.0){
+    conceito = "D"
+} else{
+   conceito = "E"
+}
+if (conceito === "A" || conceito === "B" || conceito === "C") {
+    situacao = "APROVADO"
+} else {
+    situacao = "REPROVADO"
+}
+alert(
+    "Sua Nota 1: " + nota1 +
+    "Sua Nota 2: " + nota2 +
+    "Média: " + media.toFixed(1) +
+    "Conceito: " + conceito +
+    "Situação: " + situacao
+)*/
+
+/*## 15. Tipos de triângulo
+let lado1 = Number(prompt("Informe o tamanho de um lado"))
+let lado2 = Number(prompt("Informe o tamanho de um lado"))
+let lado3 = Number(prompt("Informe o tamanho de um lado"))
+
+if (
+    lado1 + lado2 > lado3 &&
+    lado1 + lado3 > lado2 &&
+    lado2 + lado3 > lado1
+){
+ if (lado1 === lado2 && lado2 === lado3) {
+        alert("O triângulo é Equilátero")
+    } else if (
+        lado1 === lado2 ||
+        lado1 === lado3 ||
+        lado2 === lado3
+    ) {
+        alert("O triângulo é Isósceles")
+    } else {
+        alert("O triângulo é Escaleno")
+    }
+
+} else {
+    alert("Os valores informados não formam um triângulo")
+}*/
+
+
+/*## 17. Ano bissexto
+let ano = Number(prompt("Informe o ano"))
+
+if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+    alert("Ano bissexto")
+} else {
+    alert("Ano não bissexto")
+}*/
+
+
+
+/*## 18. Par ou ímpar
+let numero = Number(prompt("Informe um número"))
+
+if(numero % 2 === 0){
+    alert("Numero par")
+}else {
+    alert("Número impar")
+}
+*/
+
+/*## 19. Características de um número
+let numero = Number(prompt("Informe um número"))
+let opcao = (prompt("Informe 1 para verificar se é par ou impar ou informe 2 para verificar se é negativo ou positivo"))
+
+if(opcao === "1"){
+    if (numero % 2 === 0) {
+        alert("Número par")
+    } else {
+        alert("Número impar")
+    }
+} else if (opcao === "2") {
+    if (numero >= 0) {
+        alert("Número positivo")
+    } else {
+        alert("Número negativo")
+    }
+} else {
+    alert("Opção inválida")
+}*/
+
+/*## 20. Investigação criminal
+
+let pergunta1 = (prompt(" Telefonou para a vítima? Sim ou não?")).toLowerCase()
+let pergunta2 = (prompt("Esteve no local do crime? Sim ou não?")).toLowerCase()
+let pergunta3 = (prompt("Mora perto da vítima? Sim ou não?")).toLowerCase()
+let pergunta4 = (prompt("Devia para a vítima? Sim ou não? ")).toLowerCase()
+let pergunta5 = (prompt("Já trabalhou com a vítima? Sim ou não?")).toLowerCase()
+let pontos = 0
+
+if (pergunta1 === "sim") {
+    pontos += 1
+}
+if (pergunta2 === "sim") {
+    pontos += 1
+}
+if (pergunta3 === "sim") {
+    pontos += 1
+}
+if (pergunta4 === "sim") {
+    pontos += 1
+}
+if (pergunta5 === "sim") {
+    pontos += 1
+}
+
+if (pontos === 2) {
+    alert("Suspeita")
+} else if (pontos === 3 || pontos === 4) {
+    alert("Cúmplice")
+} else if (pontos === 5) {
+    alert("Assassino")
+} else {
+    alert("Inocente")
+}*/
+
+
 /*## 21. Maior e menor entre dois números
 let numero1 = Number(prompt("Informe primeiro número"))
 let numero2 = Number(prompt("Informe segundo um número"))
@@ -209,3 +378,71 @@ if (numero1 > numero2) {
     alert("Resposta inválida")
 }*/
 
+
+/*## 22. Maior e menor entre três inteiros
+let numero1 = Number(prompt("Informe primeiro número"))
+let numero2 = Number(prompt("Informe segundo número"))
+let numero3 = Number(prompt("Informe terceiro número"))
+
+if(numero1 > numero2 && numero1 > numero3){
+    alert(" O maior número digitado foi " + numero1)
+}else if(numero2 > numero1 && numero2 > numero3){
+    alert("O maior número digitado foi " + numero2)
+}else if(numero3 > numero1 && numero3> numero2){
+    alert("O maior número digitado foi " + numero3)
+}else{
+    alert("Resposta Inválida")
+}
+if(numero1 < numero2 && numero1 < numero3){
+    alert("O menor número digitado foi " + numero1)
+}else if (numero2 < numero1 && numero2 < numero3){
+    alert("O menor número digitado foi " + numero2)
+}else if(numero3 < numero1 && numero3 < numero2){
+    alert("O menor número digitado foi " + numero3)
+}else{
+    alert("Resposta Inválida")}*/
+
+/*## 23. Par ou ímpar em C
+let numero = Number(prompt("Informe um número"))
+
+if(numero % 2 === 0){
+    alert("Numero par")
+}else {
+    alert("Número impar")
+}
+*/
+
+/*## 24. Circunferência
+let raio = Number(prompt("Informe um número"))
+let diametro = raio * 2
+let comprimento = 2 * Math.PI * raio
+let area = Math.PI * raio ** 2
+
+alert("O diâmetro é: " + diametro)
+alert("O comprimento é: " + comprimento.toFixed(2))
+alert("A área é: " + area.toFixed(2))
+*/
+
+/* ## 25. Doação de sangue
+let idade = Number(prompt("Informe sua idade"))
+
+if (idade > 18 && idade < 68) {
+    alert("Pode doar Sangue")
+} else {
+    alert("Não pode doar Sangue")
+}*/
+
+/*## 26. Validação de data
+let dia = Number(prompt("Informe um dia entre 1 e 31"))
+let mes = Number(prompt("Informe um mês entre 1 e 12"))
+let ano = Number(prompt("Informe um ano"))
+
+if (dia < 1 || dia > 31) {
+    alert("Data inválida: dia inválido")
+} else if (mes < 1 || mes > 12) {
+    alert("Data inválida: mês inválido")
+} else if (ano < 0 || ano > 2013) {
+    alert("Data inválida: ano inválido")
+} else {
+    alert("Data válida")
+}*/
