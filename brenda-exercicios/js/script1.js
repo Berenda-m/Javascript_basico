@@ -145,7 +145,7 @@ break
 case "v": alert("Boa tarde!")
 break
 default: alert("Turno inválido")
-}
+}*/
 
 /*## 11. Reajuste salarial
 let salario = Number(prompt("Informe o valor do seu sálario:"))
@@ -175,6 +175,7 @@ if (salario <= 280) {
     novoSalario = salario + aumento
     alert("Seu salário era " + salario + ", teve um reajuste de 5% aumento de " + aumento + " reais. Seu novo salário é " + novoSalario + " reais.")
 }*/
+
 /*## 12. Folha de pagamento*/
 
 /*## 13. Dia da semana
