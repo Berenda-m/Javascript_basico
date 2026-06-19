@@ -73,13 +73,26 @@ do {
 ]
 console.log(frutas[0])*/
 
-let playlist= [
+/*let playlist= [
     "The Strokes - Reptilia 🕺",
     "Gal Costa - Barato total 🕺",
     "Pink Floyd - Breathe 🕺"
 ]
 for(let i = 0; i < playlist.length; i++){
     console.log(playlist[2])
+}*/
+
+
+let filme = [
+    "Madagascar/2005/DreamWorks",
+    "Ratatouille/2007/Disney",
+    "Shrek/2001/Dreamworks",
+    "Procurando Nemo/2003/Disney",
+    "Os Incriveis/2004/Disney"
+]
+
+for(let i= 0; i < filme.length; i++){
+    alert(filme[0])
 }
 
 
